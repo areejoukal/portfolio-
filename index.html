@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>أريج عوكل — مطوّرة ومصمّمة مواقع | اطلب عرضاً مجانياً</title>
+<meta name="description" content="أريج عوكل — مطوّرة ومصمّمة مواقع. أبني مواقع وتطبيقات ويب تجعل الزائر يفهم نشاطك من أول نظرة. عرض سعر مجاني، ونموذج أولي قبل الدفع الكامل." />
+<meta name="keywords" content="تطوير ويب, تصميم UI/UX, هوية بصرية, Laravel, React, فلسطين, مطورة مواقع, تصميم مواقع" />
+<meta name="author" content="أريج عوكل" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#c2582c" />
+<meta name="color-scheme" content="light dark" />
+<link rel="canonical" href="https://areejoukal.com/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231f2937'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23faf7f2'%3EA%3C/text%3E%3C/svg%3E" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="أريج عوكل" />
+<meta property="og:title" content="أريج عوكل — مطوّرة ومصمّمة مواقع" />
+<meta property="og:description" content="أبني مواقع وتطبيقات ويب تجعل الزائر يفهم نشاطك من أول نظرة. عرض سعر مجاني." />
+<meta property="og:image" content="https://areejoukal.com/images/og-image.jpg" />
+<meta property="og:url" content="https://areejoukal.com/" />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="أريج عوكل — مطوّرة ومصمّمة مواقع" />
+<meta name="twitter:description" content="أبني مواقع وتطبيقات ويب تجعل الزائر يفهم نشاطك من أول نظرة." />
+<meta name="twitter:image" content="https://areejoukal.com/images/og-image.jpg" />
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.web3forms.com; form-action 'self'; base-uri 'self'; upgrade-insecure-requests;" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=IBM+Plex+Sans+Arabic:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+
+<script>
+(function(){
+  var d = document.documentElement;
+  try {
+    var t = localStorage.getItem('theme');
+    var theme = (t==='light'||t==='dark') ? t
+              : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    d.setAttribute('data-theme', theme);
+
+    var l = localStorage.getItem('lang');
+    var lang = (l==='ar'||l==='en') ? l : 'ar';
+    d.setAttribute('lang', lang);
+    d.setAttribute('dir', lang==='ar' ? 'rtl' : 'ltr');
+  } catch(e){}
+  d.classList.add('js-ready');
+  setTimeout(function(){ if(!window.__portfolioReady) d.classList.add('no-anim'); }, 4000);
+})();
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"أريج عوكل","jobTitle":"مطوّرة ومصمّمة مواقع","url":"https://areejoukal.com/","email":"mailto:areejoukal@gmail.com","address":{"@type":"PostalAddress","addressCountry":"PS"},"sameAs":["https://www.linkedin.com/in/areejoukal","https://github.com/areejoukal","https://www.behance.net/areejoukal"]}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">انتقل إلى المحتوى</a>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- ==================== Topbar ==================== -->
+<header class="topbar" id="topbar">
+  <div class="topbar__inner container">
+    <a href="#home" class="brand">
+      <span class="brand__mark" aria-hidden="true">A</span>
+      <span class="brand__text">
+        <strong data-i18n="brand.name">أريج عوكل</strong>
+        <small data-i18n="brand.role">مطوّرة ومصمّمة مواقع</small>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="التنقل الرئيسي" data-i18n-attr="aria-label:nav.ariaMain">
+      <ul class="nav__list" id="nav-list" role="list">
+        <li><a href="#home" class="nav__link active" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="#about" class="nav__link" data-i18n="nav.about">نبذة عني</a></li>
+        <li><a href="#why" class="nav__link" data-i18n="nav.why">لماذا أنا</a></li>
+        <li><a href="#development" class="nav__link" data-i18n="nav.dev">البرمجة</a></li>
+        <li><a href="#design" class="nav__link" data-i18n="nav.design">التصميم</a></li>
+        <li><a href="#services" class="nav__link" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="#process-contact" class="nav__link" data-i18n="nav.process">طريقة العمل</a></li>
+        <li><a href="#contact" class="nav__link" data-i18n="nav.contact">تواصل</a></li>
+      </ul>
+    </nav>
+
+    <div class="topbar__actions">
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch to English" title="English / العربية">
+        <span class="lang-toggle__label" data-i18n="lang.label">EN</span>
+      </button>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="تفعيل الوضع الداكن" aria-pressed="false" title="تبديل الوضع" data-i18n-attr="aria-label:theme.toggle,title:theme.toggleTitle">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="#contact" class="btn btn--primary btn--sm" data-i18n="cta.freeQuote">اطلب عرضاً مجانياً</a>
+      <button class="burger" id="burger" type="button" aria-label="القائمة" aria-expanded="false" aria-controls="nav-list" data-i18n-attr="aria-label:nav.burger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ==================== Hero ==================== -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true"><span class="hero__glow hero__glow--1"></span><span class="hero__glow hero__glow--2"></span><span class="hero__grid"></span></div>
+
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="eyebrow"><span class="dot"></span><span data-i18n="hero.available">متاحة لاستقبال مشاريع جديدة</span></span>
+
+      <h1 class="hero__title" data-i18n-html="hero.title">موقع يعبّر عن <em>قيمة عملك</em></h1>
+
+      <p class="hero__lead" data-i18n="hero.lead">أصمّم وأبني مواقع وتطبيقات ويب تجعل الزائر يفهم نشاطك من أول نظرة، فيثق بك ويتواصل معك. تصميم وتطوير ودعم في مكان واحد.</p>
+
+      <ul class="hero__promises" role="list">
+        <li data-i18n="hero.promise1">عرض سعر مجاني دون أي التزام</li>
+        <li data-i18n="hero.promise2">نموذج أولي تراجعه قبل دفع المبلغ كاملاً</li>
+        <li data-i18n="hero.promise3">ردّ شخصي خلال 24 ساعة</li>
+      </ul>
+
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary"><span data-i18n="cta.freeQuote">اطلب عرضاً مجانياً</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#development" class="btn btn--outline" data-i18n="cta.browseWork">تصفّح أعمالي</a>
+      </div>
+
+      <div class="hero__meta">
+        <div class="meta-item"><strong data-i18n="hero.meta.hours">24 ساعة</strong><span data-i18n="hero.meta.hoursLabel">وقت الردّ</span></div>
+        <div class="divider"></div>
+        <div class="meta-item"><strong data-i18n="hero.meta.free">مجاني</strong><span data-i18n="hero.meta.freeLabel">عرض السعر</span></div>
+        <div class="divider"></div>
+        <div class="meta-item"><strong data-i18n="hero.meta.remote">عن بُعد</strong><span data-i18n="hero.meta.remoteLabel">مع عملاء حول العالم</span></div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="portrait-card">
+        <div class="portrait-card__avatar">
+          <img src="images/profile1.png" alt="أريج عوكل — مطوّرة ومصمّمة مواقع" loading="eager" fetchpriority="high" decoding="async" width="120" height="120" data-i18n-attr="alt:hero.portraitAlt" />
+        </div>
+        <div class="portrait-card__body">
+            <p class="portrait-card__name" data-i18n="hero.card.name">أريج عوكل</p>
+            <p class="portrait-card__role" data-i18n="hero.card.role">مطوّرة ومصمّمة مواقع</p>
+
+            <div class="portrait-card__education">
+                <span class="portrait-card__edu-label" data-i18n="hero.edu.label">التعليم</span>
+                <p class="portrait-card__edu-school" data-i18n="hero.edu.university">الجامعة الإسلامية بغزة</p>
+                <p class="portrait-card__edu-major" data-i18n="hero.edu.major">تكنولوجيا المعلومات — الوسائط المتعددة وتطوير الويب</p>
+                <span class="portrait-card__edu-gpa">
+                <span data-i18n="hero.edu.gpaLabel">المعدل</span>
+                <strong>93.55%</strong>
+                </span>
+            </div>
+            </div>
+        <div class="portrait-card__badge"><span class="dot"></span><span data-i18n="hero.card.badge">متاحة الآن</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true" lang="en" dir="ltr">
+    <div class="marquee__track">
+      <div class="marquee__group"><span>UI/UX Design</span><span>◆</span><span>Laravel</span><span>◆</span><span>React</span><span>◆</span><span>MySQL</span><span>◆</span><span>REST APIs</span><span>◆</span><span>Brand Identity</span><span>◆</span><span>Motion Graphics</span><span>◆</span><span>Responsive Design</span><span>◆</span><span>Prototyping</span><span>◆</span><span>Git &amp; GitHub</span><span>◆</span></div>
+      <div class="marquee__group"><span>UI/UX Design</span><span>◆</span><span>Laravel</span><span>◆</span><span>React</span><span>◆</span><span>MySQL</span><span>◆</span><span>REST APIs</span><span>◆</span><span>Brand Identity</span><span>◆</span><span>Motion Graphics</span><span>◆</span><span>Responsive Design</span><span>◆</span><span>Prototyping</span><span>◆</span><span>Git &amp; GitHub</span><span>◆</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== About ==================== -->
+<section class="section" id="about">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow eyebrow--plain" data-i18n="about.eyebrow">01 — نبذة عني</span>
+      <h2 class="section__title" data-i18n-html="about.title">شغف يجمع بين <em>الفن والتقنية</em></h2>
+    </header>
+
+    <div class="about">
+      <div class="about__text reveal reveal--right">
+        <p class="lead" data-i18n-html="about.lead">أنا أريج عوكل، مطوّرة <strong lang="en">Full-Stack</strong> وخريجة تخصص الوسائط المتعددة وتطوير الويب. يجذبني الجمع بين التصميم والبرمجة لبناء مواقع وتطبيقات تجمع بين المظهر الجميل وسهولة الاستخدام.</p>
+        <p data-i18n-html="about.p2">من خلال دراستي ومشاريعي، عملت على تطوير تطبيقات ويب باستخدام <span lang="en">Laravel</span> و<span lang="en">MySQL</span>، وبناء واجهات تفاعلية وربطها بالأنظمة الخلفية. أحرص على تطوير مهاراتي باستمرار، وأهتم بالتفاصيل التي تجعل المنتج الرقمي واضحاً وعملياً ويخدم احتياجات مستخدميه.</p>
+
+        <div class="about__highlights">
+          <div class="highlight">
+            <span class="highlight__num">01</span>
+            <div class="highlight__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <h3 data-i18n="about.h1.title">تصميم الواجهات</h3>
+            <p data-i18n="about.h1.desc">تصميم واجهات واضحة ومتناسقة تراعي سهولة الاستخدام.</p>
+          </div>
+          <div class="highlight">
+            <span class="highlight__num">02</span>
+            <div class="highlight__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <h3 data-i18n="about.h2.title">تطوير الويب</h3>
+            <p data-i18n="about.h2.desc">بناء واجهات المواقع وتطوير الأنظمة الخلفية وقواعد البيانات.</p>
+          </div>
+          <div class="highlight">
+            <span class="highlight__num">03</span>
+            <div class="highlight__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 data-i18n="about.h3.title">حل المشكلات</h3>
+            <p data-i18n="about.h3.desc">تحليل المتطلبات وتحويل الأفكار إلى حلول برمجية عملية.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="about__side reveal reveal--left">
+        <div class="skill-block">
+          <h3 class="skill-block__title" data-i18n="about.skills">التقنيات والأدوات</h3>
+          <div class="tech-group"><span class="tech-group__label" lang="en">FRONTEND</span><div class="tech-list" lang="en" dir="ltr"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">React.js</span></div></div>
+          <div class="tech-group"><span class="tech-group__label" lang="en">BACKEND</span><div class="tech-list" lang="en" dir="ltr"><span class="tech-tag">PHP</span><span class="tech-tag">Laravel</span><span class="tech-tag">REST APIs</span></div></div>
+          <div class="tech-group"><span class="tech-group__label" lang="en">DATABASE</span><div class="tech-list" lang="en" dir="ltr"><span class="tech-tag">MySQL</span></div></div>
+          <div class="tech-group"><span class="tech-group__label" lang="en">DESIGN</span><div class="tech-list" lang="en" dir="ltr"><span class="tech-tag">UI/UX</span><span class="tech-tag">Multimedia</span></div></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Why Me ==================== -->
+<section class="section section--sand" id="why">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow eyebrow--plain" data-i18n="why.eyebrow">02 — لماذا أنا؟</span>
+      <h2 class="section__title" data-i18n-html="why.title">أربعة أسباب تمنحك <em>الاطمئنان قبل أن تبدأ</em></h2>
+      <p class="section__sub" data-i18n="why.sub">مواقع كثيرة تعمل، لكن قليلاً منها يجلب عملاء. هذه الفروق ستلمسها من أول تواصل.</p>
+    </header>
+
+    <div class="why-grid stagger">
+      <article class="why-card"><span class="why-card__num">01</span><h3 data-i18n="why.c1.title">ترى العمل قبل دفع المبلغ كاملاً</h3><p data-i18n="why.c1.desc">أعرض عليك نموذجاً أولياً للواجهة أو النظام. إن أعجبك أكملنا، وإن لم يناسبك فلا إلزام بالاستمرار. الجهد الأول عليّ لا عليك.</p></article>
+      <article class="why-card"><span class="why-card__num">02</span><h3 data-i18n="why.c2.title">تتحدث إليّ مباشرة</h3><p data-i18n="why.c2.desc">لا وسطاء ولا فريق مبيعات. أنا من يستمع إليك، وأنا من يبني، وأنا من يبقى معك بعد التسليم.</p></article>
+      <article class="why-card"><span class="why-card__num">03</span><h3 data-i18n="why.c3.title">تصميم وتطوير ودعم من شخص واحد</h3><p data-i18n="why.c3.desc">لن تحتاج إلى البحث عن مصمم ومبرمج ومن ينسّق بينهما. كل شيء في مكان واحد، ولكل مرحلة مسؤول واحد.</p></article>
+      <article class="why-card"><span class="why-card__num">04</span><h3 data-i18n="why.c4.title">التركيز على النتيجة لا على الشكل فقط</h3><p data-i18n="why.c4.desc">التصميم الجميل وحده لا يكفي. الهدف أن يتحول الزائر إلى عميل، وكل قرار تقني أو بصري يخدم هذا الهدف.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Development ==================== -->
+<section class="section" id="development">
+  <div class="container">
+    <header class="section__head section__head--row reveal">
+      <div>
+        <span class="eyebrow eyebrow--plain" data-i18n="dev.eyebrow">03 — البرمجة</span>
+        <h2 class="section__title" data-i18n-html="dev.title">مشاريع <em>تطوير الويب</em></h2>
+        <p class="section__sub" data-i18n="dev.sub">تطبيقات ومواقع حديثة بمعايير أداء وأمان عالية، من الواجهات التفاعلية إلى الأنظمة الخلفية وقواعد البيانات.</p>
+      </div>
+      <div class="filters" role="group" aria-label="فلترة مشاريع البرمجة" data-i18n-attr="aria-label:dev.filterAria">
+        <button type="button" class="filter active" data-filter="all" aria-pressed="true" data-i18n="filters.all">الكل</button>
+        <button type="button" class="filter" data-filter="frontend" aria-pressed="false">Frontend</button>
+        <button type="button" class="filter" data-filter="backend" aria-pressed="false">Backend</button>
+        <button type="button" class="filter" data-filter="fullstack" aria-pressed="false">Full Stack</button>
+        <button type="button" class="filter" data-filter="landing" aria-pressed="false">Landing Page</button>
+      </div>
+    </header>
+
+    <div class="grid grid--dev stagger" id="dev-grid">
+
+      <article class="project project--dev" data-category="frontend">
+        <div class="project__thumb project__thumb--preview">
+          <span class="project__num">04</span>
+          <span class="project__badge" data-i18n="dev.loqma.badge">مباشر</span>
+          <img
+            src="images/imagesloqma-preview.png"
+            alt="معاينة موقع لُقمة — مطعم عربي معاصر"
+            loading="lazy"
+            width="800"
+            height="600"
+            class="project__preview-img"
+          />
+          <div class="project__preview-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="project__body">
+          <div class="project__meta">
+            <span class="project__cat" data-i18n="dev.loqma.cat">Frontend</span>
+            <span class="project__year">2026</span>
+          </div>
+          <h3 class="project__title" data-i18n="dev.loqma.title">لُقمة — مطعم عربي معاصر</h3>
+          <p class="project__desc" data-i18n="dev.loqma.desc">تجربة طعام رقمية متكاملة: قائمة تفاعلية، بحث فوري، سلة تسوق ذكية، ومفضلة — بواجهة عربية وإنجليزية، وضع فاتح وداكن، وأنيميشن احترافي.</p>
+          <ul class="project__tech" role="list" lang="en" dir="ltr">
+            <li>React</li>
+            <li>Vite</li>
+            <li>MUI</li>
+            <li>Motion</li>
+          </ul>
+        </div>
+        <a href="https://loqma-jet.vercel.app/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project__overlay"
+          aria-label="زيارة موقع لُقمة — مطعم عربي معاصر (يفتح في نافذة جديدة)">
+          <span class="sr-only">زيارة موقع لُقمة (يفتح في نافذة جديدة)</span>
+        </a>
+      </article>
+
+      <article class="project project--dev" data-category="frontend">
+        <div class="project__thumb project__thumb--preview">
+          <span class="project__num">05</span>
+          <span class="project__badge" data-i18n="dev.next.badge">مباشر</span>
+          <img src="images/next-preview.png" 
+              alt="معاينة NEXT — منصة تقييم تكيفي عربية"
+              loading="lazy" width="800" height="600" 
+              class="project__preview-img" />
+          <div class="project__preview-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="project__body">
+          <div class="project__meta">
+            <span class="project__cat" data-i18n="dev.next.cat">Frontend + PWA</span>
+            <span class="project__year">2026</span>
+          </div>
+          <h3 class="project__title" data-i18n="dev.next.title">NEXT — منصة تقييم تكيفي</h3>
+          <p class="project__desc" data-i18n="dev.next.desc">
+            منصة عربية بتقييم تكيفي تساعد المستخدم على فهم وضعه الحقيقي وتحديد خطوته التالية. 
+            PWA يعمل offline، واجهات RTL كاملة، وتدفق مستخدم من التسجيل حتى لوحة التحكم.
+          </p>
+          <ul class="project__tech" role="list" lang="en" dir="ltr">
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>PWA</li>
+            <li>LocalStorage</li>
+          </ul>
+        </div>
+        <a href="https://next-app-iota-jade.vercel.app/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project__overlay"
+          aria-label="زيارة NEXT — منصة تقييم تكيفي (يفتح في نافذة جديدة)">
+          <span class="sr-only">زيارة NEXT (يفتح في نافذة جديدة)</span>
+        </a>
+      </article>
+      
+    </div>
+
+    <div class="design-cta reveal">
+      <p data-i18n="dev.cta.text">أعجبك ما رأيت؟ لنبنِ لك مشروعاً مماثلاً.</p>
+      <a href="#contact" class="btn btn--outline"><span data-i18n="cta.freeQuote">اطلب عرضاً مجانياً</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Design ==================== -->
+<section class="section section--sand" id="design">
+  <div class="container">
+    <header class="section__head section__head--row reveal">
+      <div>
+        <span class="eyebrow eyebrow--plain" data-i18n="design.eyebrow">04 — التصميم</span>
+        <h2 class="section__title" data-i18n-html="design.title">مشاريع <em>الوسائط المتعددة</em></h2>
+        <p class="section__sub" data-i18n="design.sub">هويات بصرية وواجهات وموشن جرافيك. لكل مشروع غرض واضح، لا مجرد شكل جميل.</p>
+      </div>
+      <div class="filters" role="group" aria-label="فلترة أعمال التصميم" data-i18n-attr="aria-label:design.filterAria">
+        <button type="button" class="filter active" data-filter="all" aria-pressed="true" data-i18n="filters.all">الكل</button>
+        <button type="button" class="filter" data-filter="branding" aria-pressed="false" data-i18n="filters.branding">هوية</button>
+        <button type="button" class="filter" data-filter="ui" aria-pressed="false">UI/UX</button>
+        <button type="button" class="filter" data-filter="social" aria-pressed="false" data-i18n="filters.social">سوشيال</button>
+        <button type="button" class="filter" data-filter="motion" aria-pressed="false" data-i18n="filters.motion">موشن</button>
+        <button type="button" class="filter" data-filter="3d" aria-pressed="false">3D</button>
+      </div>
+    </header>
+
+    <div class="grid grid--design stagger" id="design-grid">
+      <!-- <article class="project project--design" data-category="branding">
+        <div class="project__thumb project__thumb--terracotta"><span class="project__num">01</span><span class="project__badge" data-i18n="filters.branding">هوية</span>
+          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4" opacity="0.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></div></div>
+        <div class="project__body">
+          <div class="project__meta"><span class="project__cat" data-i18n="design.p1.cat">هوية بصرية</span><span class="project__year">2025</span></div>
+          <h3 class="project__title" data-i18n="design.p1.title">هوية شركة تقنية</h3>
+          <p class="project__desc" data-i18n="design.p1.desc">نظام بصري متكامل: شعار وألوان وخطوط وتطبيقات على المنصات الرقمية والمطبوعة.</p>
+        </div>
+      </article>
+
+      <article class="project project--design" data-category="ui">
+        <div class="project__thumb project__thumb--sage"><span class="project__num">02</span><span class="project__badge" data-i18n="design.p2.badge">جديد</span>
+          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor" stroke-width="1.4"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+        <div class="project__body">
+          <div class="project__meta"><span class="project__cat">UI/UX</span><span class="project__year">2025</span></div>
+          <h3 class="project__title" data-i18n="design.p2.title">تطبيق توصيل طعام</h3>
+          <p class="project__desc" data-i18n="design.p2.desc">تصميم واجهات يقلّل عدد النقرات في كل خطوة، من اختيار الطبق حتى تأكيد التوصيل.</p>
+        </div>
+      </article>
+
+      <article class="project project--design" data-category="social">
+        <div class="project__thumb project__thumb--gold"><span class="project__num">03</span><span class="project__badge" data-i18n="design.p3.badge">سلسلة</span>
+          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.4"/><rect x="7" y="6" width="10" height="6" rx="1" stroke="currentColor" stroke-width="1.4"/><path d="M7 15h10M7 18h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
+        <div class="project__body">
+          <div class="project__meta"><span class="project__cat" data-i18n="design.p3.cat">سوشيال ميديا</span><span class="project__year">2025</span></div>
+          <h3 class="project__title" data-i18n="design.p3.title">تصاميم سلسلة محتوى</h3>
+          <p class="project__desc" data-i18n="design.p3.desc">مجموعة منشورات بهوية بصرية متسقة، جاهزة للاستخدام عبر منصات متعددة.</p>
+        </div>
+      </article>
+
+      <article class="project project--design" data-category="branding">
+        <div class="project__thumb project__thumb--ink"><span class="project__num">04</span>
+          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><path d="M4 20h16M6 20V9l6-5 6 5v11M10 20v-6h4v6" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div></div>
+        <div class="project__body">
+          <div class="project__meta"><span class="project__cat" data-i18n="design.p4.cat">هوية بصرية</span><span class="project__year">2024</span></div>
+          <h3 class="project__title" data-i18n="design.p4.title">علامة مقهى مختص</h3>
+          <p class="project__desc" data-i18n="design.p4.desc">هوية بصرية شاملة: تغليف وأكواب وقائمة أسعار بلغة بصرية واحدة.</p>
+        </div>
+      </article>
+
+      <article class="project project--design" data-category="motion">
+        <div class="project__thumb project__thumb--terracotta"><span class="project__num">05</span><span class="project__badge" data-i18n="design.p5.badge">فيديو</span>
+          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><polygon points="6,4 20,12 6,20" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="6" cy="4" r="1.5" fill="currentColor"/><circle cx="20" cy="12" r="1.5" fill="currentColor"/><circle cx="6" cy="20" r="1.5" fill="currentColor"/></svg></div></div>
+        <div class="project__body">
+          <div class="project__meta"><span class="project__cat" data-i18n="design.p5.cat">موشن جرافيك</span><span class="project__year">2024</span></div>
+          <h3 class="project__title" data-i18n="design.p5.title">فيديو موشن جرافيك</h3>
+          <p class="project__desc" data-i18n="design.p5.desc">مقطع قصير يشرح خدمة رقمية بأسلوب بصري مبسّط، مناسب للعروض التقديمية والسوشيال ميديا.</p>
+        </div>
+      </article>
+
+      <article class="project project--design" data-category="3d">
+        <div class="project__thumb project__thumb--sage"><span class="project__num">06</span>
+          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><path d="M12 3 21 8v8l-9 5-9-5V8l9-5ZM3.5 8.5l8.5 5 8.5-5M12 13.5V21" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div></div>
+        <div class="project__body">
+          <div class="project__meta"><span class="project__cat" data-i18n="design.p6.cat">3D / Blender</span><span class="project__year">2024</span></div>
+          <h3 class="project__title" data-i18n="design.p6.title">تصميم 3D</h3>
+          <p class="project__desc" data-i18n="design.p6.desc">نماذج ثلاثية الأبعاد بمعالجة دقيقة للخامات والإضاءة، جاهزة للاستخدام التسويقي.</p>
+        </div>
+      </article> -->
+    </div>
+
+    <div class="design-cta reveal">
+      <p data-i18n="design.cta.text">هل أعجبتك الأعمال؟ يسعدني تنفيذ مشروعك التالي.</p>
+      <a href="#contact" class="btn btn--outline"><span data-i18n="design.cta.btn">اطلب مشروعك الخاص</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Services ==================== -->
+<section class="section" id="services">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow eyebrow--plain" data-i18n="services.eyebrow">05 — الخدمات</span>
+      <h2 class="section__title" data-i18n-html="services.title">أيٌّ من هذه <em>يحتاجه مشروعك؟</em></h2>
+      <p class="section__sub" data-i18n="services.sub">اختر الحالة الأقرب إلى وضعك، وستجد تحت كل خدمة ما ستحصل عليه بالتفصيل.</p>
+    </header>
+
+    <div class="services stagger">
+      <article class="service">
+        <div class="service__header"><span class="service__num">01</span><div class="service__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.7"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.7"/></svg></div></div>
+        <h3 data-i18n="services.s1.title">تصميم واجهات المستخدم</h3>
+        <p class="service__pain" data-i18n="services.s1.pain">لديك فكرة تطبيق أو موقع، وتحتاج إلى واجهة يفهمها العميل من أول نظرة؟</p>
+        <p class="service__desc" data-i18n="services.s1.desc">أصمّم واجهات عصرية وواضحة توازن بين الجمال وسهولة الاستخدام، وتمنح الزوار تجربة سلسة على مختلف الأجهزة والشاشات.</p>
+        <ul class="service__list" role="list" lang="en" dir="ltr"><li>UI Design &amp; Prototyping</li><li>Wireframes</li><li>Responsive Interfaces</li></ul>
+        <a href="#contact" class="service__cta"><span data-i18n="services.s1.cta">اطلب عرضاً لهذه الخدمة</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+
+      <article class="service">
+        <div class="service__header"><span class="service__num">02</span><div class="service__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.7"/></svg></div></div>
+        <h3 data-i18n="services.s2.title">تصميم الهوية البصرية</h3>
+        <p class="service__pain" data-i18n="services.s2.pain">علامتك التجارية تفتقر إلى طابع مميز، ولا يتذكرها العملاء؟</p>
+        <p class="service__desc" data-i18n="services.s2.desc">أبني هوية بصرية متناسقة تعبّر عن شخصية مشروعك، وتساعده على تكوين حضور مميز ومتسق عبر المنصات الرقمية والمطبوعات.</p>
+        <ul class="service__list" role="list" lang="en" dir="ltr"><li>Logo Design</li><li>Color &amp; Typography</li><li>Brand Identity</li><li>Digital &amp; Print Assets</li></ul>
+        <a href="#contact" class="service__cta"><span data-i18n="services.s2.cta">اطلب عرضاً للهوية</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+
+      <article class="service">
+        <div class="service__header"><span class="service__num">03</span><div class="service__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+        <h3 data-i18n="services.s3.title">تطوير مواقع الويب</h3>
+        <p class="service__pain" data-i18n="services.s3.pain">موقعك بطيء، أو لا يجلب عملاء، أو تحتاج إلى موقع جديد من الصفر؟</p>
+        <p class="service__desc" data-i18n="services.s3.desc">أطوّر مواقع ويب تفاعلية تجمع بين التصميم الجيد والوظائف العملية، مع العناية بجودة الكود وتنظيم البيانات والتوافق مع مختلف الأجهزة.</p>
+        <ul class="service__list" role="list" lang="en" dir="ltr"><li>Front-End Development</li><li>Back-End Development</li><li>Database Integration</li><li>Responsive Websites</li></ul>
+        <a href="#contact" class="service__cta"><span data-i18n="services.s3.cta">اطلب عرضاً للموقع</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+
+      <article class="service">
+        <div class="service__header"><span class="service__num">04</span><div class="service__icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><polygon points="6,4 20,12 6,20" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div></div>
+        <h3 data-i18n="services.s4.title">الموشن جرافيك والمحتوى المرئي</h3>
+        <p class="service__pain" data-i18n="services.s4.pain">تريد شرح فكرة معقدة، أو تقديم منتج، أو جذب الانتباه بمحتوى بصري؟</p>
+        <p class="service__desc" data-i18n="services.s4.desc">أحوّل الأفكار والرسائل إلى محتوى بصري متحرك يجذب الانتباه ويبسّط المعلومات ويعزز حضور العلامات التجارية على المنصات الرقمية.</p>
+        <ul class="service__list" role="list" lang="en" dir="ltr"><li>Motion Graphics</li><li>Logo Animation</li><li>Animated Explainer Videos</li><li>Social Media Content</li></ul>
+        <a href="#contact" class="service__cta"><span data-i18n="services.s4.cta">اطلب عرضاً للموشن</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Process ==================== -->
+<section class="section section--sand" id="process-contact">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow eyebrow--plain" data-i18n="process.eyebrow">06 — ماذا بعد؟</span>
+      <h2 class="section__title" data-i18n-html="process.title">إن راسلتني، <em>فهذا ما سيحدث</em></h2>
+      <p class="section__sub" data-i18n="process.sub">خطوات واضحة من أول رسالة حتى نهاية المشروع، دون غموض أو انتظار طويل.</p>
+    </header>
+
+    <div class="process reveal">
+      <ol class="process__steps stagger">
+        <li class="process__step"><span class="process__step-num">01</span><div class="process__step-body"><h3 data-i18n="process.s1.title">ترسل رسالة</h3><p data-i18n="process.s1.desc">فكرة المشروع والجمهور المستهدف والميزانية التقريبية إن أمكن، في بضعة أسطر.</p></div></li>
+        <li class="process__step"><span class="process__step-num">02</span><div class="process__step-body"><h3 data-i18n="process.s2.title">أردّ خلال 24 ساعة</h3><p data-i18n="process.s2.desc">بسؤال توضيحي أو بموعد لجلسة قصيرة، بحسب حاجة المشروع.</p></div></li>
+        <li class="process__step"><span class="process__step-num">03</span><div class="process__step-body"><h3 data-i18n="process.s3.title">تستلم عرضاً مكتوباً</h3><p data-i18n="process.s3.desc">السعر والمدة والمخرجات، دون أي التزام منك.</p></div></li>
+        <li class="process__step"><span class="process__step-num">04</span><div class="process__step-body"><h3 data-i18n="process.s4.title">نبني معاً</h3><p data-i18n="process.s4.desc">نموذج أولي أولاً، ثم بناء تدريجي مع مراجعات منتظمة.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow eyebrow--plain" data-i18n="faq.eyebrow">07 — أسئلة شائعة</span>
+      <h2 class="section__title" data-i18n-html="faq.title">هل لديك سؤال <em>قبل أن تبدأ؟</em></h2>
+      <p class="section__sub" data-i18n="faq.sub">هذه أكثر الأسئلة التي تصلني. وإن لم تجد جوابك، فاسألني مباشرة.</p>
+    </header>
+
+    <div class="faq-list stagger">
+      <details class="faq-item"><summary data-i18n="faq.q1">كم تبلغ تكلفة المشروع؟</summary><p data-i18n="faq.a1">تعتمد على حجمه وعدد صفحاته وميزاته. بعد أن أستمع إلى فكرتك أرسل لك عرضاً واضحاً دون التزام. وإن لم يناسبك السعر، تبقى الخطة بين يديك لتبدأ بها مع من تشاء.</p></details>
+      <details class="faq-item"><summary data-i18n="faq.q2">كم تستغرق مدة التسليم؟</summary><p data-i18n="faq.a2">تعتمد على حجم المشروع؛ فالصفحات البسيطة أسرع، والمشاريع المتكاملة تحتاج وقتاً أطول. بعد جلسة الفهم أعطيك جدولاً زمنياً واقعياً، دون وعود لا أستطيع الوفاء بها.</p></details>
+      <details class="faq-item"><summary data-i18n="faq.q3">ليست لدي فكرة واضحة، فمن أين أبدأ؟</summary><p data-i18n="faq.a3">هذا طبيعي. كثير من العملاء يبدؤون بجملة واحدة عن نشاطهم. نجلس معاً، وأطرح الأسئلة، ونحدد الاتجاه الصحيح، حتى لو لم نعمل معاً بعد ذلك.</p></details>
+      <details class="faq-item"><summary data-i18n="faq.q4">ماذا بعد التسليم؟ ومن يصلح الأعطال؟</summary><p data-i18n="faq.a4">خلال الفترة الأولى بعد التسليم أتولى التعديلات الصغيرة بنفسي. بعد ذلك نتفق على ترتيب واضح للدعم المستمر، شهرياً أو عند الحاجة.</p></details>
+      <details class="faq-item"><summary data-i18n="faq.q5">هل تعملين مع عملاء خارج فلسطين؟</summary><p data-i18n="faq.a5">نعم، أعمل عن بُعد مع عملاء من مختلف البلدان، ويتم التواصل عبر البريد الإلكتروني أو Zoom بحسب ما يناسبك.</p></details>
+      <details class="faq-item"><summary data-i18n="faq.q6">كيف تتم عملية الدفع؟</summary><p data-i18n="faq.a6">تُدفع دفعة أولى (30%) للبدء، ويُسدَّد الباقي بعد مراجعة النتيجة والموافقة عليها. وتُحدَّد طريقة الدفع بما يناسبك.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== Contact ==================== -->
+<section class="section section--sand" id="contact">
+  <div class="container">
+    <header class="section__head section__head--row reveal">
+      <div>
+        <span class="eyebrow eyebrow--plain" data-i18n="contact.eyebrow">08 — تواصل</span>
+        <h2 class="section__title" data-i18n-html="contact.title">هل أنت مستعد للبدء؟ <em>لنتحدث.</em></h2>
+        <p class="section__sub" data-i18n="contact.sub">أرسل فكرة مشروعك ولو في جملتين، وستصلك خطة أولية وسعر مبدئي دون التزام.</p>
+      </div>
+      <div class="contact-status"><span class="contact-status__dot"></span><span data-i18n="contact.available">متاحة لاستقبال مشاريع جديدة</span></div>
+    </header>
+
+    <div class="contact">
+      <aside class="contact__info reveal reveal--right">
+        <a href="mailto:areejoukal@gmail.com" class="info-card">
+          <span class="info-card__num">01</span>
+          <span class="info-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="info-card__body"><strong data-i18n="contact.email">البريد الإلكتروني</strong><span class="info-card__value ltr">areejoukal@gmail.com</span></span>
+        </a>
+        <a href="tel:+972599574129" class="info-card">
+          <span class="info-card__num">02</span>
+          <span class="info-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="info-card__body"><strong data-i18n="contact.phone">الهاتف</strong><span class="info-card__value ltr">+972 59 957 4129</span></span>
+        </a>
+        <div class="info-card">
+          <span class="info-card__num">03</span>
+          <span class="info-card__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.7"/></svg></span>
+          <span class="info-card__body"><strong data-i18n="contact.location">الموقع</strong><span class="info-card__value" data-i18n="contact.locationValue">فلسطين — متاحة عن بُعد</span></span>
+        </div>
+
+        <div class="contact__social">
+          <a href="https://www.linkedin.com/in/areejoukal" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only" data-i18n="newWindow"> (يفتح في نافذة جديدة)</span></a>
+          <a href="https://github.com/areejoukal" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only" data-i18n="newWindow"> (يفتح في نافذة جديدة)</span></a>
+          <a href="https://www.behance.net/areejoukal" target="_blank" rel="noopener noreferrer">Behance<span class="sr-only" data-i18n="newWindow"> (يفتح في نافذة جديدة)</span></a>
+        </div>
+
+        <div class="contact__promise">
+          <span class="contact__promise-icon" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span data-i18n-html="contact.promise">ردّ شخصي — <strong>خلال 24 ساعة</strong></span>
+        </div>
+      </aside>
+
+      <form class="form reveal reveal--left" id="contact-form" novalidate>
+        <div class="form__honeypot" aria-hidden="true">
+          <label for="botcheck">اتركه فارغاً</label>
+          <input type="text" id="botcheck" name="botcheck" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <div class="form__row">
+          <div class="form__group">
+            <label for="name" data-i18n="form.name">الاسم</label>
+            <input type="text" id="name" name="name" maxlength="80" autocomplete="name" placeholder="اسمك الكامل" required aria-describedby="err-name" data-i18n-attr="placeholder:form.namePlaceholder" />
+            <span class="form__error" id="err-name" data-error="name"></span>
+          </div>
+          <div class="form__group">
+            <label for="email" data-i18n="form.email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" dir="ltr" maxlength="120" autocomplete="email" placeholder="you@gmail.com" required aria-describedby="err-email" />
+            <span class="form__error" id="err-email" data-error="email"></span>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="subject" data-i18n="form.subject">نوع المشروع</label>
+          <input type="text" id="subject" name="subject" maxlength="120" placeholder="موقع، متجر، تطبيق، هوية بصرية..." required aria-describedby="err-subject" data-i18n-attr="placeholder:form.subjectPlaceholder" />
+          <span class="form__error" id="err-subject" data-error="subject"></span>
+        </div>
+
+        <div class="form__group">
+          <label for="message" data-i18n="form.message">تفاصيل المشروع</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000" placeholder="الفكرة، والجمهور المستهدف، والوقت المتوقع، وأي تفاصيل تساعدني على الفهم أكثر..." required aria-describedby="err-message" data-i18n-attr="placeholder:form.messagePlaceholder"></textarea>
+          <span class="form__error" id="err-message" data-error="message"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full" id="submit-btn"><span data-i18n="form.submit">أرسل الرسالة</span></button>
+        <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ==================== Footer ==================== -->
+<footer class="footer">
+  <div class="footer__decor" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="container">
+
+    <div class="footer__cta">
+      <div class="footer__cta-text">
+        <h2 data-i18n-html="footer.readyTitle">هل أنت مستعد للبدء؟ <em>لنتحدث</em></h2>
+        <p data-i18n="footer.readyText">أرسل فكرة مشروعك ولو في جملتين، وستصلك خطة أولية دون التزام.</p>
+      </div>
+      <a href="#contact" class="btn btn--primary"><span data-i18n="cta.freeQuote">اطلب عرضاً مجانياً</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="footer__grid reveal">
+      <div class="footer__col footer__col--brand">
+        <a href="#home" class="footer__brand">
+          <span class="brand__mark" aria-hidden="true">A</span>
+          <div><strong data-i18n="brand.name">أريج عوكل</strong><small data-i18n="brand.role">مطوّرة ومصمّمة مواقع</small></div>
+        </a>
+        <p class="footer__about" data-i18n="footer.about">أبني مواقع وتطبيقات ويب تُبرز قيمة عملك وتجلب لك عملاء: تصميم وتطوير ودعم في مكان واحد.</p>
+        <div class="footer__status"><span class="footer__status-dot"></span><span data-i18n="contact.available">متاحة لاستقبال مشاريع جديدة</span></div>
+        <div class="footer__trust">
+          <span data-i18n="footer.trust1">✓ عرض سعر مجاني</span>
+          <span data-i18n="footer.trust2">✓ نموذج أولي قبل الدفع الكامل</span>
+          <span data-i18n="footer.trust3">✓ دعم بعد التسليم</span>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="روابط سريعة" data-i18n-attr="aria-label:footer.navTitle">
+        <h3 class="footer__title" data-i18n="footer.navTitle">التنقّل</h3>
+        <ul class="footer__links" role="list">
+          <li><a href="#home" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="#about" data-i18n="nav.about">نبذة عني</a></li>
+          <li><a href="#why" data-i18n="nav.why">لماذا أنا؟</a></li>
+          <li><a href="#development" data-i18n="nav.dev">البرمجة</a></li>
+          <li><a href="#design" data-i18n="nav.design">التصميم</a></li>
+          <li><a href="#services" data-i18n="nav.services">الخدمات</a></li>
+          <li><a href="#faq" data-i18n="footer.faqLink">الأسئلة الشائعة</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">تواصل</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.servicesTitle">الخدمات</h3>
+        <ul class="footer__services" role="list">
+          <li><a href="#services"><span class="footer__service-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.7"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.7"/></svg></span><span data-i18n="services.s1.title">تصميم الواجهات</span></a></li>
+          <li><a href="#services"><span class="footer__service-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.7"/></svg></span><span data-i18n="services.s2.title">هوية بصرية</span></a></li>
+          <li><a href="#services"><span class="footer__service-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-i18n="services.s3.title">تطوير ويب</span></a></li>
+          <li><a href="#services"><span class="footer__service-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polygon points="6,4 20,12 6,20" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span><span data-i18n="services.s4.title">موشن جرافيك</span></a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.contactTitle">تواصل</h3>
+        <ul class="footer__contact" role="list">
+          <li><span class="footer__contact-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><a href="mailto:areejoukal@gmail.com" class="ltr">areejoukal@gmail.com</a></li>
+          <li><span class="footer__contact-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><a href="tel:+972599574129" class="ltr">+972 59 957 4129</a></li>
+          <li><span class="footer__contact-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.7"/></svg></span><span data-i18n="contact.locationValue">فلسطين — عن بُعد</span></li>
+        </ul>
+
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/areejoukal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (يفتح في نافذة جديدة)" title="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22V8zm7.46 0h4.37v1.92h.06c.61-1.16 2.1-2.38 4.32-2.38 4.62 0 5.47 3.04 5.47 6.99V22h-4.56v-6.55c0-1.56-.03-3.56-2.17-3.56-2.17 0-2.5 1.69-2.5 3.44V22H7.68V8z"/></svg></a>
+          <a href="https://github.com/areejoukal" target="_blank" rel="noopener noreferrer" aria-label="GitHub (يفتح في نافذة جديدة)" title="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.78-1.34-1.78-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.24-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.66.24 2.88.12 3.18.77.85 1.24 1.92 1.24 3.24 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"/></svg></a>
+          <a href="https://www.behance.net/areejoukal" target="_blank" rel="noopener noreferrer" aria-label="Behance (يفتح في نافذة جديدة)" title="Behance"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.8 5.5c1.6 0 2.8.4 3.6 1.1.8.7 1.2 1.8 1.2 3.2 0 .9-.2 1.6-.6 2.2-.4.6-1 1-1.8 1.4 1.1.3 1.9.9 2.4 1.7.5.8.8 1.8.8 3 0 1-.2 1.9-.5 2.6-.3.7-.8 1.3-1.4 1.7-.6.4-1.3.7-2.1.9-.8.2-1.6.3-2.5.3H0V5.5h7.8zm-.5 5.6c.7 0 1.3-.2 1.7-.5.5-.3.7-.9.7-1.6 0-.4-.1-.8-.2-1-.2-.3-.4-.5-.6-.6-.3-.1-.5-.2-.8-.3-.3-.1-.6-.1-1-.1H4v4.1h3.3zm.2 6c.4 0 .8-.1 1.1-.2.3-.1.6-.3.9-.5.2-.2.4-.5.6-.8.1-.3.2-.8.2-1.3 0-1-.3-1.7-.8-2.1-.5-.4-1.3-.6-2.2-.6H4v5.5h3.5zM17.4 17c.4.4 1 .6 1.9.6.6 0 1.1-.2 1.6-.5.4-.3.7-.6.8-1h2.2c-.4 1.2-1 2.1-1.9 2.7-.8.6-1.8.8-3 .8-.8 0-1.5-.1-2.2-.4-.6-.3-1.2-.6-1.6-1.1-.4-.5-.8-1-1-1.7-.2-.6-.3-1.4-.3-2.2 0-.8.1-1.5.4-2.1.3-.7.6-1.2 1.1-1.7.5-.5 1-.8 1.6-1.1.6-.3 1.3-.4 2.1-.4.8 0 1.6.2 2.2.5.6.3 1.1.8 1.5 1.3.4.5.6 1.2.8 1.9.1.7.2 1.4.1 2.2h-7.4c0 .9.3 1.7.8 2.2zm3.2-5.7c-.3-.4-.9-.6-1.6-.6-.4 0-.8.1-1.1.2-.3.2-.5.3-.7.6-.2.2-.3.4-.4.7-.1.2-.1.4-.1.6h4.1c-.1-.7-.2-1.1-.2-1.5zM15.8 6h5.4v1.3h-5.4V6z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy" data-i18n="footer.copyright">© 2025 أريج عوكل — جميع الحقوق محفوظة.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/972599574129" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب (يفتح في نافذة جديدة)" data-i18n-attr="aria-label:whatsapp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.495-8.411zM12.05 21.785h-.004c-1.8 0-3.564-.485-5.105-1.397l-.365-.217-3.79.988.998-3.732-.237-.38c-.994-1.585-1.52-3.42-1.52-5.302.002-5.485 4.466-9.947 9.964-9.947 2.66 0 5.155 1.038 7.035 2.92 1.879 1.883 2.917 4.383 2.915 7.045-.003 5.486-4.466 9.947-9.951 9.947z"/></svg>
+</a>
+<button class="to-top" id="to-top" type="button" aria-label="العودة إلى الأعلى" data-i18n-attr="aria-label:toTop">↑</button>
+
+<script src="js/LTR.js" defer></script>
+<script src="js/script.js" defer></script>
+</body>
+</html>
