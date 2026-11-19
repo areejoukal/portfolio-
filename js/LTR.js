@@ -117,6 +117,11 @@
       'dev.next.cat': ' Frontend + PWA',
       'dev.next.title': 'NEXT — منصة تقييم تكيفي',
       'dev.next.desc': 'منصة عربية بتقييم تكيفي تساعد المستخدم على فهم وضعه الحقيقي وتحديد خطوته التالية. متاحة كتطبيق ويب تقدمي (PWA) يعمل دون اتصال، بواجهات عربية كاملة (RTL)، وتدفّق مستخدم متكامل من التسجيل حتى لوحة التحكم.',
+      'dev.mihwar.badge': 'مباشر',
+      'dev.mihwar.cat': 'Full Stack',
+      'dev.mihwar.title': 'محور — تطبيق إدارة مهام',
+      'dev.mihwar.desc': 'تطبيق إدارة مهام احترافي بواجهة عربية أنيقة: تنظيم المهام، تتبّع التقدّم، ولوحة تحكم تفاعلية. نسخة الديمو تعمل بالكامل في المتصفح لتجربة التدفّق قبل الاستضافة.',
+      'dev.mihwar.note': 'جرّب الدخول بـ: demo@example.com / password',
 
       'design.eyebrow': '04 — التصميم',
       'design.title': 'مشاريع <em>الوسائط المتعددة</em>',
@@ -239,10 +244,10 @@
       'filters.social': 'سوشيال',
       'filters.motion': 'موشن',
 
-      
+
       'meta.title': 'أريج عوكل — مطوّرة ومصمّمة مواقع | اطلب عرضاً مجانياً',
       'meta.description': 'أريج عوكل — مطوّرة ومصمّمة مواقع. أبني مواقع وتطبيقات ويب تجعل الزائر يفهم نشاطك من أول نظرة.'
-      
+
     },
 
     /* ============================================================
@@ -349,7 +354,7 @@
       'dev.p6.title': 'Services company site',
       'dev.p6.desc': 'Puts the company\'s services front and center and makes it easy to get in touch from any page.',
       'dev.cta.text': 'Like what you see? Let\'s build something like it for you.',
-    
+
       'dev.loqma.badge': 'Live',
       "dev.loqma.cat": "Frontend",
       'dev.loqma.title': 'LOQMA — Modern Arabic Restaurant',
@@ -358,7 +363,24 @@
       'dev.next.cat': 'Frontend + PWA',
       'dev.next.title': 'NEXT — Adaptive Assessment Platform',
       'dev.next.desc': 'An Arabic adaptive assessment platform that helps users understand their real situation and define their next step. Available as an offline-capable PWA with full RTL Arabic interfaces and a complete user flow from signup to dashboard.',
-          
+
+      'dev.mihwar.badge': 'Live',
+      'dev.mihwar.cat': 'Full Stack',
+      'dev.mihwar.title': 'Mihwar — Task Manager App',
+      'dev.mihwar.desc': 'A full-fledged task management system with an authentic Arabic interface: smart task organization, precise progress tracking, and an interactive dashboard that gives users a clear picture of their day and goals. Secure authentication, structured data, and a seamless workflow from signup to the last completed task.',
+      'dev.mihwar.note': 'Demo login: demo@example.com / password',
+
+      'dev.mihwar.actionsAria': 'Mihwar project links',
+      'dev.mihwar.demoBtn': 'Try the Demo',
+      'dev.mihwar.codeFront': 'Frontend Code',
+      'dev.mihwar.codeBack': 'Backend Code',
+
+
+      'dev.mihwar.actionsAria': 'روابط مشروع محور',
+      'dev.mihwar.demoBtn': 'تجربة الديمو',
+      'dev.mihwar.codeFront': 'كود الفرونت',
+      'dev.mihwar.codeBack': 'كود الباك',
+
       'design.eyebrow': '04 — Design',
       'design.title': 'Multimedia <em>projects</em>',
       'design.sub': 'Brand identities, interfaces, and motion pieces. Every project has a real purpose behind it — not just a pretty look.',
@@ -541,7 +563,7 @@
       setTimeout(() => document.documentElement.classList.remove('theme-transition'), 400);
     }
     applyLang(lang);
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { }
   }
 
   function init() {
@@ -553,7 +575,7 @@
         const nav = navigator.language || 'ar';
         lang = /^en/i.test(nav) ? 'en' : 'ar';
       }
-    } catch (e) {}
+    } catch (e) { }
 
     setLang(lang, false);
 

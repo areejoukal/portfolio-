@@ -7,7 +7,7 @@
   const WEB3FORMS_KEY = '213ac684-87a0-4a07-b099-cbca16c12f26';
   const WEB3FORMS_URL = 'https://api.web3forms.com/submit';
 
-  const $  = (s, c = document) => c.querySelector(s);
+  const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
   const root = document.documentElement;
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -51,7 +51,7 @@
     themeToggle.addEventListener('click', () => {
       const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       applyTheme(next, true);
-      try { localStorage.setItem('theme', next); } catch (e) {}
+      try { localStorage.setItem('theme', next); } catch (e) { }
     });
   }
   const onSystemChange = (e) => { if (!storedTheme()) applyTheme(e.matches ? 'dark' : 'light', true); };
@@ -67,12 +67,12 @@
   });
 
   /* ---------- الشريط العلوي + القائمة + Scroll-spy ---------- */
-  const topbar  = $('#topbar');
-  const burger  = $('#burger');
-  const nav     = $('.nav');
+  const topbar = $('#topbar');
+  const burger = $('#burger');
+  const nav = $('.nav');
   const navLinks = $$('.nav__link');
   const sections = $$('section[id]');
-  const toTop   = $('#to-top');
+  const toTop = $('#to-top');
 
   const closeNav = () => {
     if (!nav || !burger) return;
@@ -169,7 +169,7 @@
   const RATE_MS = 60000, RATE_KEY = 'lastSubmit';
 
   const isRateLimited = () => { try { return Date.now() - parseInt(localStorage.getItem(RATE_KEY) || '0', 10) < RATE_MS; } catch (e) { return false; } };
-  const markSubmit = () => { try { localStorage.setItem(RATE_KEY, String(Date.now())); } catch (e) {} };
+  const markSubmit = () => { try { localStorage.setItem(RATE_KEY, String(Date.now())); } catch (e) { } };
 
   const setStatus = (msg, type) => {
     if (!statusEl) return;
@@ -189,9 +189,9 @@
 
   const validate = (d) => {
     const rules = [
-      ['name',    d.name.length >= 2,     t('form.err.name')],
-      ['email',   isValidEmail(d.email),  t('form.err.email')],
-      ['subject', d.subject.length >= 3,  t('form.err.subject')],
+      ['name', d.name.length >= 2, t('form.err.name')],
+      ['email', isValidEmail(d.email), t('form.err.email')],
+      ['subject', d.subject.length >= 3, t('form.err.subject')],
       ['message', d.message.length >= 10, t('form.err.message')]
     ];
     let firstBad = null;
@@ -216,8 +216,8 @@
 
       const fd = new FormData(form);
       const data = {
-        name:    String(fd.get('name') || '').trim(),
-        email:   String(fd.get('email') || '').trim(),
+        name: String(fd.get('name') || '').trim(),
+        email: String(fd.get('email') || '').trim(),
         subject: String(fd.get('subject') || '').trim(),
         message: String(fd.get('message') || '').trim()
       };
@@ -239,7 +239,7 @@
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
             access_key: WEB3FORMS_KEY,
-            replyto: data.email, 
+            replyto: data.email,
             subject: `New message from website: ${data.subject}`,
             from_name: 'Areej Oukal — Portfolio',
             name: data.name,
