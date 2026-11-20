@@ -82,6 +82,17 @@
       'why.c4.title': 'التركيز على النتيجة لا على الشكل فقط',
       'why.c4.desc': 'التصميم الجميل وحده لا يكفي. الهدف أن يتحول الزائر إلى عميل، وكل قرار تقني أو بصري يخدم هذا الهدف.',
 
+      /* ============ Project actions ============ */
+      'project.visit': 'زيارة الموقع',
+      'project.visitPlatform': 'زيارة المنصة',
+      'project.visitApp': 'زيارة التطبيق',
+      'project.code': 'الكود',
+      'project.githubAria': 'عرض كود المشروع على GitHub (يفتح في نافذة جديدة)',
+      'project.codeMenuAria': 'اختر الكود الذي تريد عرضه (يفتح في نافذة جديدة)',
+      'project.frontend': 'الفرونت اند ',
+      'project.backend': ' الباك اند',
+
+      /* ============ Development ============ */
       'dev.eyebrow': '03 — البرمجة',
       'dev.title': 'مشاريع <em>تطوير الويب</em>',
       'dev.sub': 'تطبيقات ومواقع حديثة بمعايير أداء وأمان عالية، من الواجهات التفاعلية إلى الأنظمة الخلفية وقواعد البيانات.',
@@ -109,20 +120,24 @@
       'dev.p6.title': 'موقع شركة خدمات',
       'dev.p6.desc': 'موقع يعرض خدمات الشركة بوضوح، ويسهّل على الزائر التواصل معها من أي صفحة.',
       'dev.cta.text': 'أعجبك ما رأيت؟ لنبنِ لك مشروعاً مماثلاً.',
+
       'dev.loqma.badge': 'مباشر',
-      "dev.loqma.cat": "Frontend",
+      'dev.loqma.cat': 'Frontend',
       'dev.loqma.title': 'لُقمة — مطعم عربي معاصر',
-      "dev.loqma.desc": "تجربة طعام رقمية متكاملة: قائمة تفاعلية، بحث فوري، سلة تسوق ذكية، ومفضلة — بواجهة عربية وإنجليزية، وضع فاتح وداكن، وأنيميشن احترافي.",
+      'dev.loqma.desc': 'تجربة طعام رقمية متكاملة: قائمة تفاعلية، بحث فوري، سلة تسوق ذكية، ومفضلة — بواجهة عربية وإنجليزية، وضع فاتح وداكن، وأنيميشن احترافي.',
+
       'dev.next.badge': 'مباشر',
-      'dev.next.cat': ' Frontend + PWA',
+      'dev.next.cat': 'Frontend + PWA',
       'dev.next.title': 'NEXT — منصة تقييم تكيفي',
       'dev.next.desc': 'منصة عربية بتقييم تكيفي تساعد المستخدم على فهم وضعه الحقيقي وتحديد خطوته التالية. متاحة كتطبيق ويب تقدمي (PWA) يعمل دون اتصال، بواجهات عربية كاملة (RTL)، وتدفّق مستخدم متكامل من التسجيل حتى لوحة التحكم.',
+
       'dev.mihwar.badge': 'مباشر',
       'dev.mihwar.cat': 'Full Stack',
       'dev.mihwar.title': 'محور — تطبيق إدارة مهام',
       'dev.mihwar.desc': 'تطبيق إدارة مهام احترافي بواجهة عربية أنيقة: تنظيم المهام، تتبّع التقدّم، ولوحة تحكم تفاعلية. نسخة الديمو تعمل بالكامل في المتصفح لتجربة التدفّق قبل الاستضافة.',
       'dev.mihwar.note': 'جرّب الدخول بـ: demo@example.com / password',
 
+      /* ============ Design ============ */
       'design.eyebrow': '04 — التصميم',
       'design.title': 'مشاريع <em>الوسائط المتعددة</em>',
       'design.sub': 'هويات بصرية وواجهات وموشن جرافيك. لكل مشروع غرض واضح، لا مجرد شكل جميل.',
@@ -150,6 +165,7 @@
       'design.cta.text': 'هل أعجبتك الأعمال؟ يسعدني تنفيذ مشروعك التالي.',
       'design.cta.btn': 'اطلب مشروعك الخاص',
 
+      /* ============ Services ============ */
       'services.eyebrow': '05 — الخدمات',
       'services.title': 'أيٌّ من هذه <em>يحتاجه مشروعك؟</em>',
       'services.sub': 'اختر الحالة الأقرب إلى وضعك، وستجد تحت كل خدمة ما ستحصل عليه بالتفصيل.',
@@ -170,6 +186,7 @@
       'services.s4.desc': 'أحوّل الأفكار والرسائل إلى محتوى بصري متحرك يجذب الانتباه ويبسّط المعلومات ويعزز حضور العلامات التجارية على المنصات الرقمية.',
       'services.s4.cta': 'اطلب عرضاً للموشن',
 
+      /* ============ Process ============ */
       'process.eyebrow': '06 — ماذا بعد؟',
       'process.title': 'إن راسلتني، <em>فهذا ما سيحدث</em>',
       'process.sub': 'خطوات واضحة من أول رسالة حتى نهاية المشروع، دون غموض أو انتظار طويل.',
@@ -182,6 +199,7 @@
       'process.s4.title': 'نبني معاً',
       'process.s4.desc': 'نموذج أولي أولاً، ثم بناء تدريجي مع مراجعات منتظمة.',
 
+      /* ============ FAQ ============ */
       'faq.eyebrow': '07 — أسئلة شائعة',
       'faq.title': 'هل لديك سؤال <em>قبل أن تبدأ؟</em>',
       'faq.sub': 'هذه أكثر الأسئلة التي تصلني. وإن لم تجد جوابك، فاسألني مباشرة.',
@@ -198,6 +216,7 @@
       'faq.q6': 'كيف تتم عملية الدفع؟',
       'faq.a6': 'تُدفع دفعة أولى (30%) للبدء، ويُسدَّد الباقي بعد مراجعة النتيجة والموافقة عليها. وتُحدَّد طريقة الدفع بما يناسبك.',
 
+      /* ============ Contact ============ */
       'contact.eyebrow': '08 — تواصل',
       'contact.title': 'هل أنت مستعد للبدء؟ <em>لنتحدث.</em>',
       'contact.sub': 'أرسل فكرة مشروعك ولو في جملتين، وستصلك خطة أولية وسعر مبدئي دون التزام.',
@@ -208,6 +227,7 @@
       'contact.locationValue': 'فلسطين — متاحة عن بُعد',
       'contact.promise': 'ردّ شخصي — <strong>خلال 24 ساعة</strong>',
 
+      /* ============ Form ============ */
       'form.name': 'الاسم',
       'form.namePlaceholder': 'اسمك الكامل',
       'form.email': 'البريد الإلكتروني',
@@ -227,6 +247,7 @@
       'form.err.subject': 'أخبرني بنوع المشروع',
       'form.err.message': 'أضف تفاصيل أكثر (10 أحرف على الأقل)',
 
+      /* ============ Footer ============ */
       'footer.readyTitle': 'هل أنت مستعد للبدء؟ <em>لنتحدث</em>',
       'footer.readyText': 'أرسل فكرة مشروعك ولو في جملتين، وستصلك خطة أولية دون التزام.',
       'footer.about': 'أبني مواقع وتطبيقات ويب تُبرز قيمة عملك وتجلب لك عملاء: تصميم وتطوير ودعم في مكان واحد.',
@@ -244,10 +265,8 @@
       'filters.social': 'سوشيال',
       'filters.motion': 'موشن',
 
-
       'meta.title': 'أريج عوكل — مطوّرة ومصمّمة مواقع | اطلب عرضاً مجانياً',
       'meta.description': 'أريج عوكل — مطوّرة ومصمّمة مواقع. أبني مواقع وتطبيقات ويب تجعل الزائر يفهم نشاطك من أول نظرة.'
-
     },
 
     /* ============================================================
@@ -327,6 +346,17 @@
       'why.c4.title': 'I care about results, not just looks',
       'why.c4.desc': 'A pretty site alone won\'t cut it. The goal is turning visitors into customers — and every design and code decision is made with that in mind.',
 
+      /* ============ Project actions ============ */
+      'project.visit': 'Visit site',
+      'project.visitPlatform': 'Visit platform',
+      'project.visitApp': 'Visit app',
+      'project.code': 'Code',
+      'project.githubAria': 'View project code on GitHub (opens in a new window)',
+      'project.codeMenuAria': 'Choose which code to view (opens in a new window)',
+      'project.frontend': 'Frontend',
+      'project.backend': 'Backend ',
+
+      /* ============ Development ============ */
       'dev.eyebrow': '03 — Development',
       'dev.title': 'Web <em>development work</em>',
       'dev.sub': 'Modern apps and websites built to be fast and safe — from interactive front-ends all the way down to the database.',
@@ -356,9 +386,10 @@
       'dev.cta.text': 'Like what you see? Let\'s build something like it for you.',
 
       'dev.loqma.badge': 'Live',
-      "dev.loqma.cat": "Frontend",
+      'dev.loqma.cat': 'Frontend',
       'dev.loqma.title': 'LOQMA — Modern Arabic Restaurant',
-      "dev.loqma.desc": "A complete digital dining experience: interactive menu, instant search, smart cart, and wishlist — in Arabic & English, light & dark modes, with professional animations.",
+      'dev.loqma.desc': 'A complete digital dining experience: interactive menu, instant search, smart cart, and wishlist — in Arabic & English, light & dark modes, with professional animations.',
+
       'dev.next.badge': 'Live',
       'dev.next.cat': 'Frontend + PWA',
       'dev.next.title': 'NEXT — Adaptive Assessment Platform',
@@ -370,17 +401,7 @@
       'dev.mihwar.desc': 'A full-fledged task management system with an authentic Arabic interface: smart task organization, precise progress tracking, and an interactive dashboard that gives users a clear picture of their day and goals. Secure authentication, structured data, and a seamless workflow from signup to the last completed task.',
       'dev.mihwar.note': 'Demo login: demo@example.com / password',
 
-      'dev.mihwar.actionsAria': 'Mihwar project links',
-      'dev.mihwar.demoBtn': 'Try the Demo',
-      'dev.mihwar.codeFront': 'Frontend Code',
-      'dev.mihwar.codeBack': 'Backend Code',
-
-
-      'dev.mihwar.actionsAria': 'روابط مشروع محور',
-      'dev.mihwar.demoBtn': 'تجربة الديمو',
-      'dev.mihwar.codeFront': 'كود الفرونت',
-      'dev.mihwar.codeBack': 'كود الباك',
-
+      /* ============ Design ============ */
       'design.eyebrow': '04 — Design',
       'design.title': 'Multimedia <em>projects</em>',
       'design.sub': 'Brand identities, interfaces, and motion pieces. Every project has a real purpose behind it — not just a pretty look.',
@@ -408,6 +429,7 @@
       'design.cta.text': 'Like these? I\'d love to work on your next project.',
       'design.cta.btn': 'Start your own project',
 
+      /* ============ Services ============ */
       'services.eyebrow': '05 — Services',
       'services.title': 'Which of these <em>does your project need?</em>',
       'services.sub': 'Pick the one closest to your situation — under each, you\'ll find exactly what you get.',
@@ -428,6 +450,7 @@
       'services.s4.desc': 'I turn ideas and messages into motion content that grabs attention, simplifies the message, and gives brands a stronger presence online.',
       'services.s4.cta': 'Get a motion quote',
 
+      /* ============ Process ============ */
       'process.eyebrow': '06 — What\'s next?',
       'process.title': 'Message me, and <em>here\'s what happens</em>',
       'process.sub': 'Clear steps from your first message to launch day — no mystery, no long waits.',
@@ -440,6 +463,7 @@
       'process.s4.title': 'We build it together',
       'process.s4.desc': 'A first draft, then steady progress with regular check-ins.',
 
+      /* ============ FAQ ============ */
       'faq.eyebrow': '07 — FAQ',
       'faq.title': 'Any questions <em>before we start?</em>',
       'faq.sub': 'These are the ones I hear most. If yours isn\'t here, just ask.',
@@ -456,6 +480,7 @@
       'faq.q6': 'How does payment work?',
       'faq.a6': 'A 30% deposit gets things started, and the rest is paid once you\'ve reviewed the result and you\'re happy with it. We can set up the payment method in whatever way works for you.',
 
+      /* ============ Contact ============ */
       'contact.eyebrow': '08 — Contact',
       'contact.title': 'Ready to start? <em>Let\'s talk.</em>',
       'contact.sub': 'Send me your idea — even just two sentences — and you\'ll get a first plan and a rough price, with no obligation.',
@@ -466,6 +491,7 @@
       'contact.locationValue': 'Palestine — working remotely',
       'contact.promise': 'A real reply from me — <strong>within 24 hours</strong>',
 
+      /* ============ Form ============ */
       'form.name': 'Name',
       'form.namePlaceholder': 'Your full name',
       'form.email': 'Email',
@@ -485,6 +511,7 @@
       'form.err.subject': 'Let me know what kind of project this is',
       'form.err.message': 'Add a bit more detail (at least 10 characters)',
 
+      /* ============ Footer ============ */
       'footer.readyTitle': 'Ready to start? <em>Let\'s talk</em>',
       'footer.readyText': 'Send me your idea — even just two sentences — and you\'ll get a first plan, with no obligation.',
       'footer.about': 'I build websites and web apps that show off what your business does — and bring you clients. Design, code, and support, all in one place.',

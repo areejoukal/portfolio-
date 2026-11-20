@@ -343,3 +343,101 @@
   }
 
 })();
+
+/* ============ Project Code Menus (Full Stack) ============ */
+(function initCodeMenus() {
+  const menus = document.querySelectorAll('.project__code-menu');
+  if (!menus.length) return;
+
+  let currentOpen = null;
+
+  function closeMenu(menu) {
+    if (!menu) return;
+    const btn = menu.querySelector('.project__action--has-menu');
+    const list = menu.querySelector('.project__code-list');
+    if (!btn || !list) return;
+    btn.setAttribute('aria-expanded', 'false');
+    list.hidden = true;
+    currentOpen = null;
+  }
+
+  function openMenu(menu) {
+    if (currentOpen && currentOpen !== menu) closeMenu(currentOpen);
+    const btn = menu.querySelector('.project__action--has-menu');
+    const list = menu.querySelector('.project__code-list');
+    if (!btn || !list) return;
+    btn.setAttribute('aria-expanded', 'true');
+    list.hidden = false;
+    currentOpen = menu;
+
+    // ركّز على أول عنصر للوصول بالكيبورد
+    const firstItem = list.querySelector('a');
+    if (firstItem) firstItem.focus({ preventScroll: true });
+  }
+
+  menus.forEach(menu => {
+    const btn = menu.querySelector('.project__action--has-menu');
+    const list = menu.querySelector('.project__code-list');
+    if (!btn || !list) return;
+
+    // فتح/إغلاق عند النقر على الزر
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+      if (isOpen) closeMenu(menu);
+      else openMenu(menu);
+    });
+
+    // إغلاق عند اختيار عنصر
+    list.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => closeMenu(menu));
+    });
+
+    // كيبورد: Escape / الأسهم
+    list.addEventListener('keydown', (e) => {
+      const items = Array.from(list.querySelectorAll('a'));
+      const idx = items.indexOf(document.activeElement);
+
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        closeMenu(menu);
+        btn.focus();
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        const next = items[idx + 1] || items[0];
+        next.focus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        const prev = items[idx - 1] || items[items.length - 1];
+        prev.focus();
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        items[0]?.focus();
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        items[items.length - 1]?.focus();
+      }
+    });
+  });
+
+  // إغلاق عند النقر خارج أي قائمة
+  document.addEventListener('click', (e) => {
+    if (currentOpen && !currentOpen.contains(e.target)) {
+      closeMenu(currentOpen);
+    }
+  });
+
+  // إغلاق عند Escape من أي مكان
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && currentOpen) {
+      const btn = currentOpen.querySelector('.project__action--has-menu');
+      closeMenu(currentOpen);
+      btn?.focus();
+    }
+  });
+
+  // إغلاق عند التمرير (لتجنب تعليق القائمة)
+  window.addEventListener('scroll', () => {
+    if (currentOpen) closeMenu(currentOpen);
+  }, { passive: true });
+})();

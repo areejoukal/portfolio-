@@ -75,7 +75,6 @@
   <header class="topbar" id="topbar">
     <div class="topbar__inner container">
       <a href="#home" class="brand">
-        <span class="brand__mark" aria-hidden="true">A</span>
         <span class="brand__text">
           <strong data-i18n="brand.name">أريج عوكل</strong>
           <small data-i18n="brand.role">مطوّرة ومصمّمة مواقع</small>
@@ -170,8 +169,8 @@
         <div class="hero__visual">
           <div class="portrait-card">
             <div class="portrait-card__avatar">
-              <img src="images/profile1.png" alt="أريج عوكل — مطوّرة ومصمّمة مواقع" loading="eager" fetchpriority="high"
-                decoding="async" width="120" height="120" data-i18n-attr="alt:hero.portraitAlt" />
+              <img src="images/profile1.webp" alt="أريج عوكل — مطوّرة ومصمّمة مواقع" loading="eager"
+                fetchpriority="high" decoding="async" width="120" height="120" data-i18n-attr="alt:hero.portraitAlt" />
             </div>
             <div class="portrait-card__body">
               <p class="portrait-card__name" data-i18n="hero.card.name">أريج عوكل</p>
@@ -347,11 +346,11 @@
 
         <div class="grid grid--dev stagger" id="dev-grid">
 
+          <!-- ===== لُقمة — مطعم عربي معاصر ===== -->
           <article class="project project--dev" data-category="frontend">
             <div class="project__thumb project__thumb--preview">
               <span class="project__num">04</span>
-              <span class="project__badge" data-i18n="dev.loqma.badge">مباشر</span>
-              <img src="images/imagesloqma-preview.png" alt="معاينة موقع لُقمة — مطعم عربي معاصر" loading="lazy"
+              <img src="images/imagesloqma-preview.webp" alt="معاينة موقع لُقمة — مطعم عربي معاصر" loading="lazy"
                 width="800" height="600" class="project__preview-img" />
               <div class="project__preview-overlay" aria-hidden="true"></div>
             </div>
@@ -369,18 +368,37 @@
                 <li>MUI</li>
                 <li>Motion</li>
               </ul>
+
+              <!-- ✅ أزرار الإجراءات -->
+              <div class="project__actions">
+                <a href="https://loqma-jet.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="project__action project__action--demo" aria-label="زيارة موقع لُقمة (يفتح في نافذة جديدة)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <span data-i18n="project.visit">زيارة الموقع</span>
+                </a>
+                <a href="https://github.com/areejoukal/loqma" target="_blank" rel="noopener noreferrer"
+                  class="project__action project__action--github"
+                  aria-label="عرض كود لُقمة على GitHub (يفتح في نافذة جديدة)"
+                  data-i18n-attr="aria-label:project.githubAria">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.78-1.34-1.78-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.24-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.66.24 2.88.12 3.18.77.85 1.24 1.92 1.24 3.24 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z" />
+                  </svg>
+                  <span data-i18n="project.code">الكود</span>
+                </a>
+              </div>
             </div>
-            <a href="https://loqma-jet.vercel.app/" target="_blank" rel="noopener noreferrer" class="project__overlay"
-              aria-label="زيارة موقع لُقمة — مطعم عربي معاصر (يفتح في نافذة جديدة)">
-              <span class="sr-only">زيارة موقع لُقمة (يفتح في نافذة جديدة)</span>
-            </a>
           </article>
 
+
+          <!-- ===== NEXT — منصة تقييم تكيفي ===== -->
           <article class="project project--dev" data-category="frontend">
             <div class="project__thumb project__thumb--preview">
               <span class="project__num">05</span>
-              <span class="project__badge" data-i18n="dev.next.badge">مباشر</span>
-              <img src="images/next-preview.png" alt="معاينة NEXT — منصة تقييم تكيفي عربية" loading="lazy" width="800"
+              <img src="images/next-preview.webp" alt="معاينة NEXT — منصة تقييم تكيفي عربية" loading="lazy" width="800"
                 height="600" class="project__preview-img" />
               <div class="project__preview-overlay" aria-hidden="true"></div>
             </div>
@@ -401,19 +419,37 @@
                 <li>PWA</li>
                 <li>LocalStorage</li>
               </ul>
+
+              <!-- ✅ أزرار الإجراءات -->
+              <div class="project__actions">
+                <a href="https://next-app-iota-jade.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  class="project__action project__action--demo" aria-label="زيارة منصة NEXT (يفتح في نافذة جديدة)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <span data-i18n="project.visitPlatform">زيارة المنصة</span>
+                </a>
+                <a href="https://github.com/areejoukal/NextProject" target="_blank" rel="noopener noreferrer"
+                  class="project__action project__action--github"
+                  aria-label="عرض كود NEXT على GitHub (يفتح في نافذة جديدة)"
+                  data-i18n-attr="aria-label:project.githubAria">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.78-1.34-1.78-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.24-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.66.24 2.88.12 3.18.77.85 1.24 1.92 1.24 3.24 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z" />
+                  </svg>
+                  <span data-i18n="project.code">الكود</span>
+                </a>
+              </div>
             </div>
-            <a href="https://next-app-iota-jade.vercel.app/" target="_blank" rel="noopener noreferrer"
-              class="project__overlay" aria-label="زيارة NEXT — منصة تقييم تكيفي (يفتح في نافذة جديدة)">
-              <span class="sr-only">زيارة NEXT (يفتح في نافذة جديدة)</span>
-            </a>
           </article>
 
           <!-- ===== محور — Task Manager ===== -->
           <article class="project project--dev" data-category="fullstack">
             <div class="project__thumb project__thumb--preview">
               <span class="project__num">06</span>
-              <span class="project__badge" data-i18n="dev.mihwar.badge">ديمو</span>
-              <img src="images/mihwar-preview.png" alt="معاينة تطبيق محور — لإدارة المهام" loading="lazy" width="800"
+
+              <img src="images/mihwar-preview.webp" alt="معاينة تطبيق محور — لإدارة المهام" loading="lazy" width="800"
                 height="600" class="project__preview-img" />
               <div class="project__preview-overlay" aria-hidden="true"></div>
             </div>
@@ -435,11 +471,66 @@
                 <li>JavaScript</li>
                 <li>React</li>
               </ul>
+
+              <!-- ✅ أزرار الإجراءات — مع قائمة الكود (Full Stack) -->
+              <div class="project__actions">
+                <a href="https://taskmanager200.netlify.app/#/dashboard" target="_blank" rel="noopener noreferrer"
+                  class="project__action project__action--demo" aria-label="زيارة تطبيق محور (يفتح في نافذة جديدة)">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <span data-i18n="project.visitApp">زيارة التطبيق</span>
+                </a>
+
+                <!-- زر الكود مع قائمة منسدلة -->
+                <div class="project__code-menu">
+                  <button type="button" class="project__action project__action--github project__action--has-menu"
+                    aria-haspopup="true" aria-expanded="false" aria-controls="mihwar-code-menu"
+                    data-i18n-attr="aria-label:project.codeMenuAria">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.78-1.34-1.78-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.24-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.24a11.5 11.5 0 0 1 6 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.66.24 2.88.12 3.18.77.85 1.24 1.92 1.24 3.24 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.56 22.3 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z" />
+                    </svg>
+                    <span data-i18n="project.code">الكود</span>
+                    <svg class="project__action-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                      aria-hidden="true">
+                      <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </button>
+
+                  <ul class="project__code-list" id="mihwar-code-menu" role="menu" hidden>
+                    <li role="none">
+                      <a href="https://github.com/areejoukal/task-manager-frontend" target="_blank"
+                        rel="noopener noreferrer" role="menuitem" class="project__code-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                          <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.8" />
+                          <path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.8" />
+                        </svg>
+                        <span class="project__code-item-text">
+                          <strong data-i18n="project.frontend"> الفرونت اند</strong>
+
+                        </span>
+                      </a>
+                    </li>
+                    <li role="none">
+                      <a href="https://github.com/areejoukal/task-manager-api" target="_blank" rel="noopener noreferrer"
+                        role="menuitem" class="project__code-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+                          <path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="1.8" />
+                        </svg>
+                        <span class="project__code-item-text">
+                          <strong data-i18n="project.backend"> باك اند</strong>
+
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <a href="https://taskmanager200.netlify.app/#/dashboard" target="_blank" rel="noopener noreferrer"
-              class="project__overlay" aria-label="زيارة ديمو محور — تطبيق إدارة مهام (يفتح في نافذة جديدة)">
-              <span class="sr-only">زيارة ديمو محور (يفتح في نافذة جديدة)</span>
-            </a>
           </article>
 
 
@@ -484,65 +575,7 @@
         </header>
 
         <div class="grid grid--design stagger" id="design-grid">
-          <!-- <article class="project project--design" data-category="branding">
-        <div class="project__thumb project__thumb--terracotta"><span class="project__num">01</span><span class="project__badge" data-i18n="filters.branding">هوية</span>
-          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4" opacity="0.5"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></div></div>
-        <div class="project__body">
-          <div class="project__meta"><span class="project__cat" data-i18n="design.p1.cat">هوية بصرية</span><span class="project__year">2025</span></div>
-          <h3 class="project__title" data-i18n="design.p1.title">هوية شركة تقنية</h3>
-          <p class="project__desc" data-i18n="design.p1.desc">نظام بصري متكامل: شعار وألوان وخطوط وتطبيقات على المنصات الرقمية والمطبوعة.</p>
-        </div>
-      </article>
-
-      <article class="project project--design" data-category="ui">
-        <div class="project__thumb project__thumb--sage"><span class="project__num">02</span><span class="project__badge" data-i18n="design.p2.badge">جديد</span>
-          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="3" stroke="currentColor" stroke-width="1.4"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
-        <div class="project__body">
-          <div class="project__meta"><span class="project__cat">UI/UX</span><span class="project__year">2025</span></div>
-          <h3 class="project__title" data-i18n="design.p2.title">تطبيق توصيل طعام</h3>
-          <p class="project__desc" data-i18n="design.p2.desc">تصميم واجهات يقلّل عدد النقرات في كل خطوة، من اختيار الطبق حتى تأكيد التوصيل.</p>
-        </div>
-      </article>
-
-      <article class="project project--design" data-category="social">
-        <div class="project__thumb project__thumb--gold"><span class="project__num">03</span><span class="project__badge" data-i18n="design.p3.badge">سلسلة</span>
-          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.4"/><rect x="7" y="6" width="10" height="6" rx="1" stroke="currentColor" stroke-width="1.4"/><path d="M7 15h10M7 18h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div></div>
-        <div class="project__body">
-          <div class="project__meta"><span class="project__cat" data-i18n="design.p3.cat">سوشيال ميديا</span><span class="project__year">2025</span></div>
-          <h3 class="project__title" data-i18n="design.p3.title">تصاميم سلسلة محتوى</h3>
-          <p class="project__desc" data-i18n="design.p3.desc">مجموعة منشورات بهوية بصرية متسقة، جاهزة للاستخدام عبر منصات متعددة.</p>
-        </div>
-      </article>
-
-      <article class="project project--design" data-category="branding">
-        <div class="project__thumb project__thumb--ink"><span class="project__num">04</span>
-          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><path d="M4 20h16M6 20V9l6-5 6 5v11M10 20v-6h4v6" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div></div>
-        <div class="project__body">
-          <div class="project__meta"><span class="project__cat" data-i18n="design.p4.cat">هوية بصرية</span><span class="project__year">2024</span></div>
-          <h3 class="project__title" data-i18n="design.p4.title">علامة مقهى مختص</h3>
-          <p class="project__desc" data-i18n="design.p4.desc">هوية بصرية شاملة: تغليف وأكواب وقائمة أسعار بلغة بصرية واحدة.</p>
-        </div>
-      </article>
-
-      <article class="project project--design" data-category="motion">
-        <div class="project__thumb project__thumb--terracotta"><span class="project__num">05</span><span class="project__badge" data-i18n="design.p5.badge">فيديو</span>
-          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><polygon points="6,4 20,12 6,20" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="6" cy="4" r="1.5" fill="currentColor"/><circle cx="20" cy="12" r="1.5" fill="currentColor"/><circle cx="6" cy="20" r="1.5" fill="currentColor"/></svg></div></div>
-        <div class="project__body">
-          <div class="project__meta"><span class="project__cat" data-i18n="design.p5.cat">موشن جرافيك</span><span class="project__year">2024</span></div>
-          <h3 class="project__title" data-i18n="design.p5.title">فيديو موشن جرافيك</h3>
-          <p class="project__desc" data-i18n="design.p5.desc">مقطع قصير يشرح خدمة رقمية بأسلوب بصري مبسّط، مناسب للعروض التقديمية والسوشيال ميديا.</p>
-        </div>
-      </article>
-
-      <article class="project project--design" data-category="3d">
-        <div class="project__thumb project__thumb--sage"><span class="project__num">06</span>
-          <div class="project__glyph" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><path d="M12 3 21 8v8l-9 5-9-5V8l9-5ZM3.5 8.5l8.5 5 8.5-5M12 13.5V21" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></div></div>
-        <div class="project__body">
-          <div class="project__meta"><span class="project__cat" data-i18n="design.p6.cat">3D / Blender</span><span class="project__year">2024</span></div>
-          <h3 class="project__title" data-i18n="design.p6.title">تصميم 3D</h3>
-          <p class="project__desc" data-i18n="design.p6.desc">نماذج ثلاثية الأبعاد بمعالجة دقيقة للخامات والإضاءة، جاهزة للاستخدام التسويقي.</p>
-        </div>
-      </article> -->
+          <!-- (مشاريع التصميم — تبقى كما هي) -->
         </div>
 
         <div class="design-cta reveal">
